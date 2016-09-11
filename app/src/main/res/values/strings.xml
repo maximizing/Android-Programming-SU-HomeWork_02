@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Hello Android</string>
+    <string name="insert_password">ป้อนรหัสผ่าน</string>
+    <string name="password_number">123456</string>
+    <string name="number1_button">1</string>
+    <string name="number2_button">2</string>
+    <string name="number3_button">3</string>
+    <string name="number4_button">4</string>
+    <string name="number5_button">5</string>
+    <string name="number6_button">6</string>
+    <string name="number7_button">7</string>
+    <string name="number8_button">8</string>
+    <string name="number9_button">9</string>
+    <string name="number0_button">0</string>
+    <string name="clear_button">CLEAR</string>
+
+
 </resources>

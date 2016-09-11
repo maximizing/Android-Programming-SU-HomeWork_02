@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
@@ -16,56 +16,58 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/tv1"
-            android:text="ป้อนรหัสผ่าน"
+            android:text="@string/insert_password"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:gravity="center_horizontal"
             android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tv1"
-            android:text="123456"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:background="#770000"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/password_number"
             android:textColor="#FFFF33"
-            android:background="#770000"/>
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number1_button" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="3"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number2_button" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#BBBBBB"
+                android:text="@string/number3_button" />
 
         </LinearLayout>
 
@@ -77,22 +79,23 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number4_button" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="6"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number5_button" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#BBBBBB"
+                android:text="@string/number6_button" />
 
         </LinearLayout>
 
@@ -104,22 +107,23 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="7"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="8"
-                android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number7_button" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="9"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number8_button" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#BBBBBB"
+                android:text="@string/number9_button" />
 
         </LinearLayout>
 
@@ -131,15 +135,16 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/number0_button" />
+
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="CLEAR"
+                android:layout_weight="1"
                 android:backgroundTint="#BBBBBB"
-                android:layout_weight="1"/>
+                android:text="@string/clear_button" />
 
         </LinearLayout>
 
