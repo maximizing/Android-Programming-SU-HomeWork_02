@@ -58,43 +58,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
             case R.id.btn_one:
-                checkTextView("1");
+                checkTextView(btn1.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_two:
-                checkTextView("2");
+                checkTextView(btn2.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_three:
-                checkTextView("3");
+                checkTextView(btn3.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_four:
-                checkTextView("4");
+                checkTextView(btn4.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_five:
-                checkTextView("5");
+                checkTextView(btn5.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_six:
-                checkTextView("6");
+                checkTextView(btn6.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_seven:
-                checkTextView("7");
+                checkTextView(btn7.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_eight:
-                checkTextView("8");
+                checkTextView(btn8.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_nine:
-                checkTextView("9");
+                checkTextView(btn9.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_zero:
-                checkTextView("0");
+                checkTextView(btn0.getText().toString());
                 checkSum++;
                 break;
             case R.id.btn_clear:
