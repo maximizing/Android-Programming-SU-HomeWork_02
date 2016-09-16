@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Hello Android</string>
+    <string name="clear_button">ลบ</string>
+    <string name="insert_password">กรุณากรอกรหัสผ่าน</string>
+    <string name="number0_button">๐</string>
+    <string name="number1_button">๑</string>
+    <string name="number2_button">๒</string>
+    <string name="number3_button">๓</string>
+    <string name="number4_button">๔</string>
+    <string name="number5_button">๕</string>
+    <string name="number6_button">๖</string>
+    <string name="number7_button">๗</string>
+    <string name="number8_button">๘</string>
+    <string name="number9_button">๙</string>
+    <string name="password_number">๑๒๓๔๕๖</string>
+</resources>

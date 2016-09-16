@@ -1,16 +1,16 @@
 package com.aimax.helloandroid;
 
-import android.support.v7.app.AppCompatActivity;
+import
+        android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    int checkFirst = 0;
+    int checkSum = 1;
     TextView tv;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btn_clear;
 
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tv = (TextView) findViewById(R.id.tv2);
         btn1 = (Button) findViewById(R.id.btn_one);
         btn2 = (Button) findViewById(R.id.btn_two);
         btn3 = (Button) findViewById(R.id.btn_three);
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn0.setOnClickListener(this);
         btn_clear.setOnClickListener(this);
 
+        tv.setText("");
+
     }
 
     @Override
@@ -55,57 +58,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
             case R.id.btn_one:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "1");
+                checkTextView("1");
+                checkSum++;
                 break;
             case R.id.btn_two:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "2");
+                checkTextView("2");
+                checkSum++;
                 break;
             case R.id.btn_three:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "3");
+                checkTextView("3");
+                checkSum++;
                 break;
             case R.id.btn_four:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "4");
+                checkTextView("4");
+                checkSum++;
                 break;
             case R.id.btn_five:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "5");
+                checkTextView("5");
+                checkSum++;
                 break;
             case R.id.btn_six:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "6");
+                checkTextView("6");
+                checkSum++;
                 break;
             case R.id.btn_seven:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "7");
+                checkTextView("7");
+                checkSum++;
                 break;
             case R.id.btn_eight:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "8");
+                checkTextView("8");
+                checkSum++;
                 break;
             case R.id.btn_nine:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "9");
+                checkTextView("9");
+                checkSum++;
                 break;
             case R.id.btn_zero:
-                checkTextView();
-                tv.setText(tv.getText().toString() + "0");
+                checkTextView("0");
+                checkSum++;
                 break;
             case R.id.btn_clear:
-                checkTextView();
                 tv.setText("");
+                checkSum = 1;
                 break;
         }
 
     }
 
-    public void checkTextView() {
-        if (checkFirst < 1) {
-            tv.setText("");
-            checkFirst++;
+    public void checkTextView(String button) {
+         if (checkSum < 7){
+            tv.setText(tv.getText().toString() + button);
         }
     }
 }
