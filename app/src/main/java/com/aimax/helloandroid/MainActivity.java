@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 //        Toast t = Toast.makeText(this,"Press buutton 1",Toast.LENGTH_LONG);
 //        t.show();
-        tv = (TextView) findViewById(R.id.tv2);
+
 
         switch (v.getId()) {
             default:
