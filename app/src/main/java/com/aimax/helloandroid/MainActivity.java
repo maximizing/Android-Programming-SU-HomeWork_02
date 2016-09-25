@@ -59,43 +59,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_one:
                 checkTextView(btn1.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_two:
                 checkTextView(btn2.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_three:
                 checkTextView(btn3.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_four:
                 checkTextView(btn4.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_five:
                 checkTextView(btn5.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_six:
                 checkTextView(btn6.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_seven:
                 checkTextView(btn7.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_eight:
                 checkTextView(btn8.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_nine:
                 checkTextView(btn9.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_zero:
                 checkTextView(btn0.getText().toString());
-                checkSum++;
                 break;
             case R.id.btn_clear:
                 tv.setText("");
@@ -108,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void checkTextView(String button) {
          if (checkSum < 7){
             tv.setText(tv.getText().toString() + button);
+             checkSum++;
         }
     }
 }
