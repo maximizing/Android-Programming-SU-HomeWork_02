@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.aimax.helloandroid.model.InputDigits;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     int checkSum = 1;
-    String mText = "";
+    //    String mText = "";  /** แบบเก่า **/
+    InputDigits mText;
     TextView tv;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btn_clear;
 
@@ -45,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn0.setOnClickListener(this);
         btn_clear.setOnClickListener(this);
 
-        tv.setText(mText);
+        mText = new InputDigits("");
+        clear();
 
     }
 
@@ -53,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 //        Toast t = Toast.makeText(this,"Press buutton 1",Toast.LENGTH_LONG);
 //        t.show();
-
 
         switch (v.getId()) {
             default:
@@ -89,17 +92,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 checkTextView(btn0.getText().toString());
                 break;
             case R.id.btn_clear:
-                tv.setText("");
-                checkSum = 1;
+                clear();
                 break;
         }
 
     }
 
-    public void checkTextView(String button) {
-         if (checkSum < 7){
-            tv.setText(mText + button);
-             checkSum++;
+    private void checkTextView(String button) {
+        /** แบบเก่า **/
+//         if (checkSum < 7 && !button.equals("-")){
+//            tv.setText(mText + button);
+//             checkSum++;
+//        }else {
+//             tv.setText("");
+//             checkSum = 1;
+//         }
+
+        /** แบบ class **/
+        if (mText.get().length() < 7) {
+            mText.add(button);
+            showText();
         }
     }
+
+    private void showText() {
+        tv.setText(mText.get());
+    }
+
+    private void clear() {
+        /** แบบเดิม **/
+//        tv.setText("");
+
+        /** แบบ class **/
+        mText.clear();
+        showText();
+    }
+
 }
