@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     int checkSum = 1;
+    String mText = "";
     TextView tv;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btn_clear;
 
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn0.setOnClickListener(this);
         btn_clear.setOnClickListener(this);
 
-        tv.setText("");
+        tv.setText(mText);
 
     }
 
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void checkTextView(String button) {
          if (checkSum < 7){
-            tv.setText(tv.getText().toString() + button);
+            tv.setText(mText + button);
              checkSum++;
         }
     }
